@@ -40,6 +40,12 @@ class Function:
 
 
 simplCalculator = Function()
-simplCalculator.set_values()
-simplCalculator.set_sing()
-print(simplCalculator.calc())
+
+print("Input zero for exit!")
+while True:
+    simplCalculator.set_sing()
+    s = simplCalculator.get_sing()
+    if s == '0':
+        break
+    simplCalculator.set_values()
+    print(simplCalculator.calc())
